@@ -1,9 +1,9 @@
-import { Link, useLocation } from "wouter";
-import { ShoppingBag, User, Menu, X } from "lucide-react";
-import { useState } from "react";
-import { useCart } from "@/hooks/use-cart";
 import { useAuth } from "@/hooks/use-auth";
-import { motion, AnimatePresence } from "framer-motion";
+import { useCart } from "@/hooks/use-cart";
+import { AnimatePresence, motion } from "framer-motion";
+import { Menu, ShoppingBag, User, X } from "lucide-react";
+import { useState } from "react";
+import { Link, useLocation } from "wouter";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -33,7 +33,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="font-display text-2xl font-bold tracking-tight">
-            VALIERIA DECORD
+            VALERIA DECORD
           </Link>
 
           {/* Desktop Nav */}
